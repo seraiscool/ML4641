@@ -1,6 +1,6 @@
 # ML4641
 
-## Introduction:
+## Introduction
 Image classification has a wide range of researched techniques and approaches which have been applied to a variety of problems. Our project is interested in exploring the application of this technology to classifying Pokémon, the namesake fictional creatures in Nintendo’s popular game series. Existing techniques for classifying animals do exist, and it would be interesting to apply this technology to Pokémon types, which can be considered a loose analog for animal taxonomical groups (family, phylum, etc.).
 
 ## Problem Definition
