@@ -12,7 +12,14 @@ After the data is cleaned and preprocessed, we plan to use a supervised K neares
 
 ## Potential results and Discussion
 In order to measure the model performance we will use the accuracy, categorical cross entropy, multi-class F1, and confusion matrix as some of our metrics for classification. The model should be able to classify the Pokemon images into groups, through their given primary archetypes, with significant precision. The accuracy metric is a quintessential feature defining how accurate the model is. Categorical cross entropy will measure how distinguishable the probability distributions for each Pokemon type are from each other. Accuracy could be potentially misleading on imbalanced datasets, and therefore confusion matrix, owing to its versatility, would be another excellent tool for evaluating performance.
-Since some types of Pokemon are significantly more common than others, it is expected that the confusion matrix will show a higher number of pokemon classified as the more common types (i.e. fire,water, etc.) than the actual amount of that type and vice versa. The multi-class F1 is expected to correspond with the categorical cross entropy as the more distinguishable the probability distributions are the better the precision and recall will be. 
+Since some types of Pokemon are significantly more common than others, it is expected that the confusion matrix will show a higher number of pokemon classified as the more common types (i.e. fire,water, etc.) than the actual amount of that type and vice versa. The multi-class F1 is expected to correspond with the categorical cross entropy as the more distinguishable the probability distributions are the better the precision and recall will be.
+
+## References
+
+1. Tabak, M. A., Norouzzadeh, M. S., Wolfson, D. W., Sweeney, S. J., VerCauteren, K. C., Snow, N. P., Halseth, J. M., Di Salvo, P. A., Lewis, J. S., White, M. D., Teton, B., Beasley, J. C., Schlichting, P. E., Boughton, R. K., Wight, B., Newkirk, E. S., Ivan, J. S., Odell, E. A., Brook, R. K., … Miller, R. S. (2018). Machine learning to classify animal species in camera trap images: Applications in ecology. Methods in Ecology and Evolution, 10(4). https://doi.org/10.1101/346809 
+2. Han, Y., Zou, Z., Li, N., &amp; Chen, Y. (2022). Identifying outliers in astronomical images with unsupervised machine learning. Research in Astronomy and Astrophysics, 22(8), 085006. https://doi.org/10.1088/1674-4527/ac7386 
+3. Amir, A., Zahri, N.A.H., Yaakob, N., Ahmad, R.B. (2017). Image Classification for Snake Species Using Machine Learning Techniques. In: Phon-Amnuaisuk, S., Au, TW., Omar, S. (eds) Computational Intelligence in Information Systems. CIIS 2016. Advances in Intelligent Systems and Computing, vol 532. Springer, Cham. https://doi.org/10.1007/978-3-319-48517-1_5
+4. 
 
 ## Timeline
 [Access Gantt Chart here](https://docs.google.com/spreadsheets/d/1C_5R84fuOJFV-A0jJgSX9z4PrilBJ4jo/edit?usp=sharing&ouid=107739152912878040423&rtpof=true&sd=true)
