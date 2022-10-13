@@ -6,6 +6,10 @@ import re
 import pprint
 
 def rename_images_by_dex(label_csv, img_dir):
+    '''
+    Takes the given labels and calls extract_dict_from_csv. Uses dict of {pokedex id: Name} to 
+    rename images in specified img folder for future use. 
+    '''
     data = pd.read_csv(label_csv)
     imgs = os.listdir(img_dir)
     data = extract_dict_from_csv(file=label_csv)
