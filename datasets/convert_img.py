@@ -7,7 +7,7 @@ def convert_imgs(src_dirs, file_format, replace=True):
     # import pdb; pdb.set_trace()
     for src_dir in src_dirs:
         imgs = os.listdir(src_dir)
-        imgs = list(filter((lambda x: '.png' in x or '.jpg' in x), imgs))
+        imgs = list(filter((lambda x: file_format not in x), imgs))
         for img in imgs:
             new_img = Image.open(os.path.join(src_dir, img))
             img_name = os.path.splitext(img)[0] + file_format
