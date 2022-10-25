@@ -16,8 +16,8 @@ def move_imgs(src_dirs, dest_dir, override):
                 subprocess.call(cp_cmd, shell=True)
                 continue
             img_wo_ext = os.path.splitext(img)[0]
-            img = img_wo_ext + '1.png'
-            img_path = os.path.join(src_dir + img)
+            new_img = img_wo_ext + '1.png'
+            img_path = os.path.join(dest_dir,new_img)
             cp_cmd = 'cp ' + os.path.join(src_dir, img) + " " + img_path 
             subprocess.call(cp_cmd, shell=True)
 
