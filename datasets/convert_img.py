@@ -3,6 +3,13 @@ import argparse
 import os
 
 def convert_imgs(src_dirs, file_format, replace=True):
+    '''
+    Arguments:
+        src_dirs: a list of image directories where the conversion is to take place
+        file_format: the desired file format extension; expects png or jpg
+        replace: whether to replace the existing image file of the same name
+                 or simply create the new file with the desired extension
+    '''
     file_format = '.' + file_format.strip('.')
     # import pdb; pdb.set_trace()
     for src_dir in src_dirs:

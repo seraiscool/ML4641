@@ -2,7 +2,15 @@ import os
 import argparse
 import subprocess
 
-def move_imgs(src_dirs, dest_dir, override):
+def copy_imgs(src_dirs, dest_dir, override=False):
+    '''
+    Arguments:
+        src_dirs: a list of directories from which images are being copied
+        dest_dir: the directory where all images will be saved
+        override: how to handle if an image already exists in the dest_dir;
+                  by default, it will not override the existing image and 
+                  saves another image with a modified filename. 
+    '''
     if not os.path.exists(dest_dir):
         os.mkdir(dest_dir)
     for src_dir in src_dirs:
@@ -30,4 +38,4 @@ if __name__ == "__main__":
     src_dirs = parser_args.src_dirs
     dest_dir = parser_args.dest_dir
     override = parser_args.override
-    move_imgs(src_dirs, dest_dir, override)
+    copy_imgs(src_dirs, dest_dir, override)
