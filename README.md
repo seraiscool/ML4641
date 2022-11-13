@@ -22,7 +22,7 @@ A heat map was generated to visualize the number of each type of pokemon and col
 
 ![heat_map](https://user-images.githubusercontent.com/29692528/201534698-3597bb02-c3ac-4024-a149-d3c7139454b2.png)
 
-Another 2-D heatmap is to represent the numerics behind type 1 and type 2 of each Pokemon are. It is used to evaluate if there is a correlation behind if one type 1 correlates to more of a certain type 2. It gave more information that many Pokemon in the dataset don’t actually have a Type 2, as decribed by the heatmap below. 
+Another 2-D heatmap is to represent the numerics behind type 1 and type 2 of each Pokemon are. It is used to evaluate if there is a correlation behind if one type 1 correlates to more of a certain type 2. It gave more information that many Pokemon in the dataset don’t actually have a Type 2, as decribed by the heatmap below. The data for the current heat map define represents other data such as whether certain features attritbute to whether the a Pokemon of Type1 will have the features or abilities of Type 2.
 ![heat_map](https://user-images.githubusercontent.com/34498983/201546159-c3a5699a-2e00-428e-9d12-bd370dee8de5.png)
 
 ## Methods
@@ -47,7 +47,7 @@ To evaluate the model, we used sklearn’s classification report to get some bas
 <img width="430" alt="Screen Shot 2022-11-13 at 12 17 06 PM" src="https://user-images.githubusercontent.com/29692528/201534868-36329faa-1395-4e6b-8d56-3d6f0fa136d6.png">
 
 From our low precision and recall values, one can gather that our model is currently producing a large number of false positives and false negatives. This becomes particularly pronounced when Pokemon class metrics are skewed. One potential reason could be that the synonymous color palette for closely-related pokemon types (such as Ice and Water) is causing the KNN based model to leverage the results in the favor of the more prevalent archetype.
-Another thing that we can glean from the report is that the classes with relatively distinct color palettes such as Fairy, Psychic etc. fared better than their counterparts.
+Another thing that we can glean from the report is that the classes with relatively distinct color palettes such as Fairy, Psychic etc. fared better than their counterparts. The more range features or colors within the distinct types, the more generally easier it is for the model to classify them. 
 
 Below is the confusion matrix for the KNN  results:
 
