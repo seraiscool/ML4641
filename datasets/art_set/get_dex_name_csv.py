@@ -4,7 +4,7 @@ import pandas as pd
 
 def extract_dict_from_csv(file, save=False):
     '''
-    Takes the pokemon dex csv and extracts a dict mapping pokedex number
+    Takes the pokedex csv and extracts a dict mapping pokedex number
     to pokemon name. 
     '''
     data = pd.read_csv(file)
