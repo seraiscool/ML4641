@@ -102,11 +102,4 @@ CNN performs much better than KNN, probably due to the more sophisticated nature
 <img width="574" alt="Screen Shot 2022-12-06 at 6 28 57 PM" src="https://user-images.githubusercontent.com/29692528/206047506-29d4b6c1-f33a-4d7e-9293-462dd44a0bd8.png">
 
 
-| Aayush Mittal   | Eric Chen        | Janie Edgar      | Sera Biju        | Marin Hyatt      |
-| ----------------|------------------| -----------------|------------------| -----------------|
-|Dimensionality reduction - PCA implementation| TSNE implementation/visualization | Data visualization (heat map, image generation) | Data visualization (2nd heatmap -2d matrix)| Dataset augmentation         |
-| Results     | Dataset Cleaning (file/ label formats)   | Results     | Results        | Data cleaning         |
-|Discussion | | Discussion | Discussion| Feature vector generation|
-| | | | | KNN implementation |
-
 
